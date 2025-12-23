@@ -1,0 +1,74 @@
+.page1{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    background: linear-gradient(rgba(0, 32, 91, 1) , rgba(3, 146, 255, 1) );
+}
+.page1 img{
+    width: 160px;
+}
+.page1 h2{
+    text-align: center;
+    color: white;
+    font: 600 64px 'Poppins';
+    max-width: 600px;
+    line-height: 60px;
+    margin:30px 0 10px;
+}
+
+.page1 p {
+    text-align: center;
+    color: white;
+    font: 400 24px 'Poppins';
+}
+
+.page1 > div{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.page1 button{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.664);
+    font: 400 18px 'Inter';
+    transition: .4s;
+}
+
+.page1 button::before{
+    pointer-events: none;
+    position:absolute;
+    content: '';
+    height:100%;
+    bottom: 0;
+    left: -20px;
+    width: 20px;
+    transition: .4s;
+    background: white;
+    transform: rotate(-20deg);
+    filter: blur(14px);
+}
+
+
+.page1 button:hover::before{
+    left: 100%;
+}
+
+.page1 button:hover{
+    transform: translateY(-6px);
+}
+
+
+@media screen and (max-width:1500px) {
+    .page1 h2{
+        font-size: 54px;
+    }
+}

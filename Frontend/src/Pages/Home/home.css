@@ -1,0 +1,258 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  color: #0f1a2e;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  color: rgba(15, 26, 46, 0.55);
+}
+
+.home-header h1 {
+  margin: 4px 0 0;
+  font-size: 28px;
+  color: #0f1a2e;
+}
+
+.profile-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #f5f7fd;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 26, 46, 0.08);
+}
+
+.chip-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6a8bff 0%, #5ad5ff 100%);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #0f1a2e;
+}
+
+.chip-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chip-name {
+  font-weight: 600;
+}
+
+.chip-role {
+  font-size: 12px;
+  color: rgba(15, 26, 46, 0.55);
+}
+
+.chip-button {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(90, 163, 255, 0.35);
+  background: linear-gradient(135deg, #ffffff 0%, #f4f7ff 100%);
+  color: #0f1a2e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chip-button:hover {
+  border-color: rgba(90, 163, 255, 0.55);
+  background: #ffffff;
+}
+
+.home-grid {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.home-grid > .card {
+  flex: 1 1 320px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 26, 46, 0.06);
+  box-shadow: 0 18px 50px rgba(15, 26, 46, 0.12);
+  padding: 18px;
+}
+
+.card-header h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  color: #0f1a2e;
+}
+
+.chart-wrap {
+  height: 260px;
+  margin-top: 8px;
+}
+
+.gauge-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gauge-wrap {
+  position: relative;
+  height: 260px;
+}
+
+.gauge-label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  gap: 7px;
+  pointer-events: none;
+}
+
+.gauge-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.gauge-sub {
+  color: rgba(15, 26, 46, 0.55);
+  font-size: 13px;
+}
+
+.table-card {
+  width: 100%;
+}
+
+.table-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.table-head h3 {
+  margin: 2px 0 0;
+  font-size: 20px;
+}
+
+.table-meta {
+  color: rgba(15, 26, 46, 0.55);
+  font-size: 13px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.table-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f9fbff;
+  border: 1px solid rgba(15, 26, 46, 0.06);
+  gap: 14px;
+}
+
+.table-row--head {
+  color: rgba(15, 26, 46, 0.6);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.order-id {
+  font-weight: 700;
+  min-width: 80px;
+}
+
+.order-date {
+  flex: 1.2;
+  color: rgba(15, 26, 46, 0.72);
+}
+
+.order-status {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  min-width: 110px;
+}
+
+.order-total {
+  color: rgba(15, 26, 46, 0.72);
+  min-width: 80px;
+  text-align: right;
+}
+
+.status-green {
+  background: rgba(76, 175, 80, 0.15);
+  color: #2e7d32;
+  border: 1px solid rgba(76, 175, 80, 0.35);
+}
+
+.status-blue {
+  background: rgba(70, 134, 255, 0.15);
+  color: #2a62d6;
+  border: 1px solid rgba(70, 134, 255, 0.35);
+}
+
+.status-amber {
+  background: rgba(255, 193, 7, 0.18);
+  color: #c18a00;
+  border: 1px solid rgba(255, 193, 7, 0.35);
+}
+
+@media (max-width: 1100px) {
+  .home-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-header h1 {
+    font-size: 24px;
+  }
+
+  .table-row,
+  .table-row--head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    text-align: left;
+  }
+
+  .order-status {
+    width: fit-content;
+  }
+}
